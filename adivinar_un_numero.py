@@ -1,22 +1,22 @@
 import random
 
 def jugar_adivina_el_numero():
-    numero_secreto = random.randint(1, 100)
+    numero_secreto = random.randint(1, 10)
     intentos = 0
 
-    print("¡Bienvenido a Adivina el Número!")
-    print("Estoy pensando en un número entre 1 y 100.")
+    print("¡Bienvenido a Adivina el Numero!")
+    print("Trata de adivinar el numero que estoy pensando entre 1 y 10.")
 
     while True:
         intentos += 1
-        intento = int(input("Introduce tu adivinanza: "))
+        intento = int(input("A ver si adivinas? tira tu adivinanza: "))
 
         if intento < numero_secreto:
-            print("Mi número es mayor. ¡Inténtalo de nuevo!")
+            print("FRIO FRIO!!! Mi número es mayor. Proba de vuelta!")
         elif intento > numero_secreto:
-            print("Mi número es menor. ¡Inténtalo de nuevo!")
+            print("FRIO FRIO!!! Mi número es menor. ¡Proba de vuelta!")
         else:
-            print(f"¡Felicidades! Adivinaste el número en {intentos} intentos.")
+            print(f"¡UUhhh me ganaste! Adivinaste el número en {intentos} intentos.")
             break
 
 
