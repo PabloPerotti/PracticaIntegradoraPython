@@ -26,9 +26,10 @@ ventana.geometry("400x200+400+100")
 instrucciones = tk.Label(ventana, text="Elige una opción:")
 instrucciones.pack()
 
-piedra_boton = tk.Button(ventana, text="Piedra", command=jugar("Piedra"))
-papel_boton = tk.Button(ventana, text="Papel", command=jugar("Papel"))
-tijera_boton = tk.Button(ventana, text="Tijera", command=jugar("Tijera"))
+piedra_boton = tk.Button(ventana, text="Piedra", command=lambda: jugar("Piedra"))
+papel_boton = tk.Button(ventana, text="Papel", command=lambda: jugar("Papel"))
+tijera_boton = tk.Button(ventana, text="Tijera", command=lambda: jugar("Tijera"))
+
 
 piedra_boton.pack()
 papel_boton.pack()
